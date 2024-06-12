@@ -21,6 +21,10 @@ class LoginFragment : Fragment() {
     ): View? {
         binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
 
+        FirebaseAuth.getInstance().currentUser?.let {
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+
+        }
 
         binding.createAccountTV.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
