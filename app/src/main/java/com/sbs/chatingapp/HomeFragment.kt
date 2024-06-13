@@ -18,9 +18,9 @@ class HomeFragment : Fragment() {
 
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
 
-        binding.logoutBTN.setOnClickListener {
+        /*binding.logoutBTN.setOnClickListener {
 
-             val auth = FirebaseAuth.getInstance()
+            val auth = FirebaseAuth.getInstance()
 
             auth.signOut().apply {
 
@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
 
 
         }
-
+*/
         return binding.root
     }
 
