@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.bumptech.glide.Glide
 import com.sbs.chatingapp.databinding.ItemUserBinding
 
@@ -39,9 +40,7 @@ class UserAdapter(val userListener: UserListener) :
                 fullName.text = it.fullName
                 userBio.text = it.bio
                 email.text = it.email
-                /*profileImage.load(it.profileImage)*/
-                Glide.with(context).load(it.profileImage).placeholder(R.drawable.placeholder)
-                    .into(profileImage)
+
                 holder.itemView.setOnClickListener { _ ->
                     userListener.userItemClick(it)
                 }

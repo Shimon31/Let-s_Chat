@@ -28,7 +28,6 @@
         android:textAlignment="center"
         android:background="@drawable/edit_text_bg"
         android:padding="20dp"
-        android:fontFamily="@font/aladin"
         android:inputType="textEmailAddress"/>
 
     <EditText
@@ -42,7 +41,6 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_bg"
         android:padding="20dp"
-        android:fontFamily="@font/aladin"
         android:inputType="textPassword"/>
 
 
@@ -53,7 +51,6 @@
         android:text="Login"
         android:backgroundTint="@color/primary_clr"
         android:padding="20dp"
-        android:fontFamily="@font/aladin"
         android:textColor="@color/white"
         android:background="@drawable/edit_text_bg"
         android:layout_marginTop="40dp"/>
@@ -63,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Forget Password"
-        android:fontFamily="@font/aladin"
+
         android:textSize="18sp"
         android:gravity="center"
         android:layout_marginTop="10dp"
@@ -75,7 +72,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create an Account"
-        android:fontFamily="@font/aladin"
         android:textSize="18sp"
         android:gravity="center"
         android:layout_marginTop="10dp"

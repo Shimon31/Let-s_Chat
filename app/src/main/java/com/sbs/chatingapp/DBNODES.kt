@@ -1,12 +1,10 @@
 package com.sbs.chatingapp
 
-object DBNODES {
 
-    object DBNOTES {
+    object DBNODES {
         const val USER = "User"
-        const val CHAT = "chat"
-        const val GROUP = "group"
-        const val GROUP_CHATS = "group chats"
+        const val CHATS = "Chats"
+        const val Group = "Group"
+        const val GROUP_CHATS = "Group_Chats"
     }
 
-}
