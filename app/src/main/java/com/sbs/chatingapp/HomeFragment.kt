@@ -26,7 +26,6 @@ class HomeFragment : Fragment(),UserAdapter.UserListener {
 
     private val auth = FirebaseAuth.getInstance()
     private lateinit var firebaseUser: FirebaseUser
-
     private var currentUser: User? = null
     var bundle = Bundle()
 
@@ -117,7 +116,6 @@ class HomeFragment : Fragment(),UserAdapter.UserListener {
             binding.topBar.profileImage.load("https://www.loudegg.com/wp-content/uploads/2020/10/Mickey-Mouse.jpg")
         }
     }
-
 
 
     override fun userItemClick(user: User) {

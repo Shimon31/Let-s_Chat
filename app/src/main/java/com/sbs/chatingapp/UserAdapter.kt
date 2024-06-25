@@ -30,7 +30,6 @@ class UserAdapter(val userListener: UserListener) :
             )
         )
     }
-
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         getItem(position)?.let {
             holder.binding.apply {

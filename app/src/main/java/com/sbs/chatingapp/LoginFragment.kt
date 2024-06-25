@@ -1,6 +1,7 @@
 package com.sbs.chatingapp
 
 import android.os.Bundle
+import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -35,7 +36,7 @@ class LoginFragment : Fragment() {
             val email = binding.emailET.text.toString().trim()
             val password = binding.passET.text.toString().trim()
 
-            if (isValidEmail(email) && isValidPassword(password)){
+            if (isEmailValid(email) && isPasswordValid(password)){
                 loginUser(email, password)
 
             }else{
@@ -65,15 +66,16 @@ class LoginFragment : Fragment() {
 
     }
 
-    fun isValidEmail(email: String): Boolean {
-        val emailRegex = "^[A-Za-z0-9+_.-]+@(.+)$"
-        return email.matches(emailRegex.toRegex())
+
+    fun isEmailValid(email: String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
 
-    fun isValidPassword(password: String): Boolean {
-
-        val passwordRegex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%^&+=]).{8,}$"
-        return password.matches(passwordRegex.toRegex())
+    fun isPasswordValid(password: String): Boolean {
+//        val passwordRegex =
+//            Regex("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$")
+        return password.length >= 6
     }
+
 
 }

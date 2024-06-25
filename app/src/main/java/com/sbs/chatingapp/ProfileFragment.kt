@@ -72,7 +72,7 @@ class ProfileFragment : Fragment() {
                         binding.userEmail.text = it.email
                         binding.bio.text = it.bio
                         binding.fullName.text = it.fullName
-                        binding.profileImage.load(it.profileImage)
+//                        binding.profileImage.load(it.profileImage)
 
 
                     }
